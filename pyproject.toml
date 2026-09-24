@@ -1,0 +1,32 @@
+[project]
+name = "ntns"
+version = "0.1.0"
+description = "Neural Transport Nested Sampling"
+readme = "README.md"
+authors = [
+    { name = "yallup", email = "david.yallup@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "anesthetic>=2.13.5",
+    "blackjax",
+    "diffrax>=0.7.2",
+    "distrax>=0.1.7",
+    "flax>=0.12.6",
+    "jax>=0.9.2",
+    "matplotlib>=3.10.8",
+    "optax>=0.2.8",
+    "pot>=0.9.4",
+    "tqdm>=4.67.3",
+    "tueplots>=0.2.4",
+]
+
+[project.optional-dependencies]
+cuda = ["jax[cuda12]"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+blackjax = { git = "https://github.com/handley-lab/blackjax.git", branch = "irmh" }

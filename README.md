@@ -34,3 +34,17 @@ uv run examples/run_mala_dw4.py
 uv run examples/run_mala_lj13.py
 uv run examples/run_mala_lj55.py
 ```
+
+## Citation
+
+```bibtex
+@misc{yallup2026neuraltransportnestedsampling,
+      title={Neural Transport Nested Sampling}, 
+      author={David Yallup and Will Handley},
+      year={2026},
+      eprint={2609.29413},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2609.29413}, 
+}
+```
